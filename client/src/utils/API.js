@@ -1,17 +1,17 @@
 import axios from "axios";
 
 export default {
-findByRecipeId: function(id){
-    return axios.get("/api/recipe" + id)
-},
+  findByRecipeId: function (id) {
+    return axios.get("/api/recipe" + id);
+  },
 
-saveRecipe: function(recipeData){
-    return axios.post("/api/recipe", recipeData)
-},
+  saveRecipe: function (recipeData) {
+    return axios.post("/api/recipeCreate", recipeData);
+  },
 
-saveIngredient: function(ingredientData){
-    return axios.post("/api/ingredients", ingredientData)
-}
+  saveIngredient: function (ingredientData) {
+    return axios.post("/api/ingredients", ingredientData);
+  },
 };
 
 // export default {
